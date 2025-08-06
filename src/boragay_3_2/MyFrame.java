@@ -199,19 +199,14 @@ public class MyFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_txtFieldActionPerformed
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-        String username = "scott";
-        String password = "scott123";
-        if(txtField.getText().equals(username) || passwordField.getText().equals(password) ){
-              loginPanel.setVisible(false);
+             loginPanel.setVisible(false);
               registrationPanel.setVisible(true);    
-        }else{
-            JOptionPane.showMessageDialog(null, "Wrong credentials");
-        }
     }//GEN-LAST:event_btnLoginActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+             loginPanel.setVisible(true);
+              registrationPanel.setVisible(false);           
+        ;    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
